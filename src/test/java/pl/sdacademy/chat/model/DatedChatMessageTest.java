@@ -2,14 +2,13 @@ package pl.sdacademy.chat.model;
 
 import org.junit.Test;
 
-import java.time.LocalDateTime;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class DatedChatMessageTest {
 
     @Test
-    public void test() {
+    public void shouldCopyValueFromChatMessage() {
         // Given
         ChatMessage chatMessage = new ChatMessage("Grzesiek", "Ala ma kota");
         // When
